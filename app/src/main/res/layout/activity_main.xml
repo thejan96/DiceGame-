@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backg"
+    tools:context="com.example.werewolves.dicegame.MainActivity">
+
+    <Button
+        android:text="Less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewScore1"
+        android:layout_alignStart="@+id/textViewScore1"
+        android:layout_marginTop="124dp"
+        android:id="@+id/buttonPOneLess"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="0dp"
+        android:background="@android:color/holo_orange_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score 1"
+        android:layout_marginStart="22dp"
+        android:id="@+id/textViewScore1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:fontFamily="cursive"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Great"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPOneGreat"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/buttonPOneLess"
+        android:background="@android:color/holo_orange_light" />
+
+    <Button
+        android:text="Less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonPOneLess"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonPTwoLess"
+        android:background="@android:color/holo_orange_light" />
+
+    <Button
+        android:text="Great"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonPOneGreat"
+        android:layout_alignStart="@+id/buttonPTwoLess"
+        android:id="@+id/buttonPtwogreat"
+        android:background="@android:color/holo_orange_light" />
+
+    <TextView
+        android:text="Player 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/buttonPTwoLess"
+        android:layout_alignEnd="@+id/buttonPOneLess"
+        android:layout_marginEnd="18dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="Player 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/textViewScore2"
+        android:layout_marginEnd="11dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/scoreOne"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textViewScore1"
+        tools:fontFamily="cursive"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreTwo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignBaseline="@+id/scoreOne"
+        android:layout_alignBottom="@+id/scoreOne"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignStart="@+id/textViewScore2"
+        tools:fontFamily="cursive"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="Score 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/textViewScore2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:text="Roll the Dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:id="@+id/buttonRollDice"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:fontFamily="cursive"
+        style="@android:style/Widget.Button"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@+id/buttonPOneGreat"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
